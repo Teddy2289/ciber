@@ -5,14 +5,15 @@ import { FaChevronRight } from "react-icons/fa";
 
 interface AccordionItemProps {
   header: React.ReactNode;
+  children: React.ReactNode;
 }
 
-const AccordionItem = ({ header, ...rest }: AccordionItemProps) => (
+const AccordionItem = ({ header, children, ...rest }: AccordionItemProps) => (
   <Item
     {...rest}
     header={({ state: { isEnter } }) => (
       <>
-        <span className="capitalize text-secondary2"> {header}</span>
+        <span className="capitalize text-secondary2">{header}</span>
         <FaChevronRight
           className={`ml-auto text-secondary2 transition-transform duration-200 ease-out ${
             isEnter && "rotate-90"
@@ -30,8 +31,9 @@ const AccordionItem = ({ header, ...rest }: AccordionItemProps) => (
     contentProps={{
       className: "transition-height duration-200 ease-out",
     }}
-    panelProps={{ className: "p-4" }}
-  />
+    panelProps={{ className: "p-4" }}>
+    {children}
+  </Item>
 );
 
 export default AccordionItem;

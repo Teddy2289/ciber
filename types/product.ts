@@ -5,7 +5,7 @@ export interface Subcategory {
 }
 
 export interface Category {
-  category_name: string;
+  category_name: any;
   link: string;
   subcategories: Subcategory[];
 }
