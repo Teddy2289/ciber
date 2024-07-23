@@ -17,10 +17,10 @@ export const MobHeader = () => {
   return (
     <div className="flex flex-row">
       <div className="flex flex-row gap-4">
-        <NavLink href="/">
+        <NavLink href="/login">
           <LuUser2 className="text-3xl" />
         </NavLink>
-        <NavLink href="/">
+        <NavLink href="/panier">
           <FiShoppingBag className="text-3xl" />
         </NavLink>
         <RxHamburgerMenu className="text-3xl" onClick={() => setOpen(!open)} />
@@ -72,6 +72,9 @@ export const MobHeader = () => {
                 </NavLink>
                 <NavLink onClick={handleClose} href="/service">
                   Services
+                </NavLink>
+                <NavLink onClick={handleClose} href="/contact">
+                  Nous contacter
                 </NavLink>
               </div>
               <SearchBar />
