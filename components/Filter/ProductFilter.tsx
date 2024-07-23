@@ -5,7 +5,7 @@ import { IoSearchOutline } from "react-icons/io5";
 
 export const ProductFilter = ({}) => {
   return (
-    <div className=" lg:w-[30%] gap-3 lg:gap-5 flex flex-col shadow-2xl border rounded-2xl px-3 lg:px-6 py-3 lg:py-5">
+    <div className=" lg:w-[30%] sm:flex-col gap-3 lg:gap-5 flex flex-col shadow-2xl border rounded-2xl px-3 lg:px-6 py-3 lg:py-5">
       <Input
         title="référence"
         placeholder="mandona"

@@ -9,10 +9,10 @@ export const ProductCountdown = () => {
     <div className="w-full  bg-black px-8 lg:px-14 gap-6 md:px-16 md:py-10 flex flex-col lg:flex-row overflow-hidden mt-9">
       <div className="flex flex-col py-5 lg:py-16 justify-between md:items-center lg:items-start w-full lg:w-1/2 gap-5 lg:gap-3">
         <p className="text-green font-semibold text-center lg:text-left text-base leading-5 capitalize lg:mb-8 text-secondary">
-          categories
+          Catégories
         </p>
         <h2 className="capitalize text-white text-center lg:text-left font-semibold leading-snug text-2xl lg:text-5xl lg:mb-8 ">
-          Enhance Your Music Experience
+          Améliorez votre expérience musicale{" "}
         </h2>
         <Countdown targetDate={targetDate} />
 

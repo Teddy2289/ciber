@@ -11,19 +11,41 @@ interface ProductListFilterProps {}
 
 export const ProductListFilter = ({}: ProductListFilterProps) => {
   return (
-    <div className="flex flex-row justify-between gap-12">
+    <div className="flex flex-col lg:flex-row justify-between gap-12">
       <ProductFilter />
-      <div className="w-[70%]">
-        <section className="w-fit mx-auto grid grid-cols-1  lg:grid-cols-4 md:grid-cols-2 justify-items-center justify-center gap-6 mt-10 mb-5">
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-        </section>
+      <div className="w-full lg:w-[70%]">
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-4">
+          <div className="ptext-center text-black bg-blue-500">
+            {" "}
+            <ProductCard />
+          </div>
+          <div className="text-center text-black bg-blue-500">
+            {" "}
+            <ProductCard />
+          </div>
+          <div className="text-center text-black bg-blue-500">
+            {" "}
+            <ProductCard />
+          </div>
+          <div className="text-center text-black bg-blue-500">
+            <ProductCard />
+          </div>
+          <div className="ptext-center text-black bg-blue-500">
+            {" "}
+            <ProductCard />
+          </div>
+          <div className="text-center text-black bg-blue-500">
+            {" "}
+            <ProductCard />
+          </div>
+          <div className="text-center text-black bg-blue-500">
+            {" "}
+            <ProductCard />
+          </div>
+          <div className="text-center text-black bg-blue-500">
+            <ProductCard />
+          </div>
+        </div>
         <Separator classname="h-3 mt-12" />
         <Pagination />
       </div>

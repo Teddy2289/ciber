@@ -6,7 +6,7 @@ export const SearchBar = () => {
   return (
     <form
       onSubmit={(e) => e.preventDefault()}
-      className="border border-gray-500 rounded-full py-2 px-3 flex flex-row gap-2 w-fit justify-between mr-[70px] bg-transparent">
+      className="border border-gray-500 rounded-full py-2 px-3 flex flex-row gap-2 w-fit justify-between lg:mr-[70px] bg-transparent">
       <input
         type="search"
         placeholder="recherch"

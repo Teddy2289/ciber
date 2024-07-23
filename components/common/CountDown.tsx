@@ -26,7 +26,7 @@ export const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
               {timeLeft.days}
             </span>
             <span className="text-xs font-normal leading-4 capitalize text-white lg:text-black">
-              Days
+              jours
             </span>
           </div>
           <div className="flex flex-col justify-center items-center lg:px-7 lg:py-6  lg:bg-white rounded-full gap-4 lg:gap-0">
@@ -34,7 +34,7 @@ export const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
               {timeLeft.hours}
             </span>
             <span className="text-xs font-normal leading-4 capitalize text-white lg:text-black">
-              Hours
+              heures
             </span>
           </div>
           <div className="flex flex-col justify-center items-center lg:px-5 lg:py-6  lg:bg-white rounded-full gap-4 lg:gap-0">
@@ -50,14 +50,14 @@ export const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
               {timeLeft.seconds}
             </span>
             <span className="text-xs font-normal leading-4 capitalize text-white lg:text-black">
-              seconds
+              secondes
             </span>
           </div>
         </div>
       ) : (
         <span className="flex flex-col justify-center items-center lg:px-5 lg:py-6  lg:bg-white rounded-full gap-4">
           <span className="lg:text-base text-xl font-semibold text-secondary leading-6">
-            Times up!
+            Temps écoulé!
           </span>
         </span>
       )}

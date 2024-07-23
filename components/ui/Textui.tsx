@@ -3,18 +3,13 @@ import { Wrapper } from "../wrapper";
 
 const services = [
   {
-    title: "FREE AND FAST DELIVERY",
-    description: "Free delivery for all orders over $140",
-    image: "/images/delivery.png",
-  },
-  {
-    title: "24/7 CUSTOMER SERVICE",
-    description: "Friendly 24/7 customer support",
+    title: "Service client 24/7",
+    description: "Service client 24/7 convivial",
     image: "/images/Services.png",
   },
   {
-    title: "MONEY BACK GUARANTEE",
-    description: "We reurn money within 30 days",
+    title: "Garantie de remboursement",
+    description: "Nous rembourserons l’argent dans les 30 jours",
     image: "/images/guaranty.png",
   },
 ];

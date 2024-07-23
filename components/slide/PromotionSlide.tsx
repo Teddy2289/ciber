@@ -33,12 +33,12 @@ export default function PromotionSlide() {
                   </span>
                 </div>
                 <h2 className="text-4xl text-center lg:text-left font-semibold leading-tight text-white mt-5 mb-6 lg:max-w-[210px]">
-                  Up to 10% off Voucher
+                  Jusqu’à 10% de réduction{" "}
                 </h2>
                 <Link
                   href="/"
                   className="flex flex-row gap-2 items-center text-white capitalize font-medium px-0 hover:no-underline relative after:block w-fit after:w-[70%] after:absolute after:bottom-[-2px]  after:h-[1px] after:bg-white">
-                  shop now
+                  Acheter maintenant
                   <IoIosArrowForward className="text-white" />
                 </Link>
               </div>

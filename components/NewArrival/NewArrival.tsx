@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function NewArrival() {
   return (
     <div className="w-full flex flex-col gap-10 mt-14 px-6 md:px-8">
-      <TitlteSecrion postTitle="featured" title="new arrival" />
+      <TitlteSecrion postTitle="En vedette" title="Nouveaux arrivés" />
       <div className="flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap lg:flex-row gap-8">
         <div
           className="w-full lg:w-1/2 bg-black flex flex-col justify-end items-start p-9 lg:p-8 md:h-[300px] lg:h-[600px] rounded-sm bg-no-repeat bg-bottom bg-contain"
@@ -21,7 +21,7 @@ export default function NewArrival() {
             <Link
               href="/"
               className=" text-white capitalize font-medium px-0 hover:no-underline relative after:block w-fit after:w-full after:absolute after:bottom-[-2px]  after:h-[1px] after:bg-white text-xl">
-              shop now
+              Acheter maintenant
             </Link>
           </div>
         </div>
@@ -32,15 +32,15 @@ export default function NewArrival() {
           >
             <div className="flex flex-col gap-3 justify-end w-full lg:w-[55%] py-6">
               <h4 className="font-semibold text-3xl lg:text-2xl leading-8 text-white">
-                Women’s Collections
+                Titre
               </h4>
               <p className="text-white text-md lg:text-sm leading-5 mt-4 mb-4">
-                Featured woman collections that give you another vibe.
+                Sous titre
               </p>
               <Link
                 href="/"
                 className=" text-white capitalize font-medium px-0 hover:no-underline relative after:block w-fit after:w-full after:absolute after:bottom-[-2px]  after:h-[1px] after:bg-white">
-                shop now
+                Acheter maintenant
               </Link>
             </div>
             <div
@@ -62,7 +62,7 @@ export default function NewArrival() {
                 <Link
                   href="/"
                   className=" text-white capitalize font-medium px-0 hover:no-underline relative after:block w-fit after:w-full after:absolute after:bottom-[-2px]  after:h-[1px] after:bg-white">
-                  shop now
+                  Acheter maintenant
                 </Link>
               </div>
             </div>
@@ -71,15 +71,15 @@ export default function NewArrival() {
               style={{ backgroundImage: "url('/images/mac.png')" }}>
               <div className="flex flex-col gap-4 lg:gap-unset justify-end w-full md:h-[300px] lg:h-auto">
                 <h4 className="font-semibold text-3xl lg:text-2xl leading-8 text-white">
-                  Perfume
+                  Titre
                 </h4>
                 <p className="text-white text-md lg:text-sm leading-5 mt-2 mb-2">
-                  GUCCI INTENSE OUD EDP
+                  Sous titre
                 </p>
                 <Link
                   href="/"
                   className=" text-white capitalize font-medium px-0 hover:no-underline relative after:block w-fit after:w-full after:absolute after:bottom-[-2px]  after:h-[1px] after:bg-white">
-                  shop now
+                  Acheter maintenant
                 </Link>
               </div>
             </div>

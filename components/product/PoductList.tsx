@@ -14,7 +14,7 @@ export default function PoductList({ products }: ProductListProps) {
   return (
     <div className="mt-40 px-6 md:px-8 md:mt-[450px] lg:mt-14">
       <TitlteSecrion title="Découvrez nos produits" postTitle="Nos produits" />
-      <section className="w-fit mx-auto grid grid-cols-1  lg:grid-cols-4 md:grid-cols-2 justify-items-center justify-center gap-y-14 gap-x-14 mt-10 mb-5">
+      <section className="w-full mx-auto grid grid-cols-2  lg:grid-cols-4 md:grid-cols-2 justify-items-center justify-center gap-6 mt-10 mb-5">
         <ProductCard />
         <ProductCard />
         <ProductCard />
