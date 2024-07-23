@@ -19,6 +19,7 @@ export const Subcategory = ({
     <Link
       href={link}
       className="cursor-pointer"
+      onClick={() => setIsHover(!isHover)}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}>
       <div className="flex justify-between items-center w-full ">

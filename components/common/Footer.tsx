@@ -8,10 +8,13 @@ import Button from "./Button";
 export const Footer = () => {
   return (
     <>
-      <div className="w-full bg-black flex text-white flex-col justify-between items-center pt-[50px] px-32 mt-[50px]">
-        <div className="Linkx-8 grid grid-cols-4 gap-4">
-          <div className="flex flex-col gap-4">
-            <h3 className="text-1xl">Abonnement exclusif</h3>
+      <div className="w-full bg-black flex  text-white flex-col justify-between items-center pt-[50px] px-6 md:px-28 lg:px-32 mt-[50px]">
+        <div className="w-full flex flex-col md:flex-wrap lg:flex-nowrap md:flex-row md:justify-between gap-5 md:gap-8 lg:gap-8">
+          <Logo classname="first:scale-105 md:w-[45%] lg:w-auto" />
+          <div className="flex flex-col gap-4 md:w-[45%] lg:w-1/5">
+            <h3 className="text-2xl text-bold capitalize">
+              Abonnement exclusif
+            </h3>
             <Link href="#" className="text-sm text-slate-400">
               Obtenez 10% de rabais sur vos Linkremières commandes
             </Link>
@@ -28,8 +31,8 @@ export const Footer = () => {
               className="transition duration-300 ease-in-out bg-secondary hover:bg-secondary2 px-2 text-sm"
             />
           </div>
-          <div className="flex flex-col gap-4">
-            <h3 className="text-1xl">Support</h3>
+          <div className="flex flex-col gap-4 md:w-[45%] lg:w-1/5">
+            <h3 className="text-2xl text-bold capitalize">Support</h3>
             <Link href="#" className="text-sm text-slate-400">
               Lorem iLinksum dolor sit amet consectetur adiLinkisicing elit. Ea,
               molestiae?
@@ -41,8 +44,8 @@ export const Footer = () => {
               +88015-88888-9999
             </Link>
           </div>
-          <div className="flex flex-col gap-4">
-            <Link href="#" className="text-1xl">
+          <div className="flex flex-col gap-4 md:w-[45%] lg:w-1/5">
+            <Link href="#" className="text-2xl text-bold capitalize">
               Compte
             </Link>
             <Link href="#" className="text-sm text-slate-400">
@@ -55,8 +58,8 @@ export const Footer = () => {
               Panier
             </Link>
           </div>
-          <div className="flex flex-col gap-4">
-            <h3 className="text-1xl">Lien rapide</h3>
+          <div className="flex flex-col gap-4 md:w-[45%] lg:w-1/5">
+            <h3 className="text-2xl text-bold capitalize">Lien rapide</h3>
             <Link href="#" className="text-sm text-slate-400">
               Politique de confidentialité
             </Link>
@@ -76,7 +79,6 @@ export const Footer = () => {
           <Link href="#" className="text-sm text-slate-400">
             Copyright © 2024. Tous droits réservés.
           </Link>
-          <Logo />
         </div>
       </div>
     </>

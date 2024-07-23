@@ -11,10 +11,10 @@ interface ProductListFilterProps {}
 
 export const ProductListFilter = ({}: ProductListFilterProps) => {
   return (
-    <div className="flex flex-row gap-2">
+    <div className="flex flex-row justify-between gap-12">
       <ProductFilter />
-      <div>
-        <section className="w-fit mx-auto grid grid-cols-1  lg:grid-cols-4 md:grid-cols-2 justify-items-center justify-center gap-y-8 gap-x-6 mt-10 mb-5">
+      <div className="w-[70%]">
+        <section className="w-fit mx-auto grid grid-cols-1  lg:grid-cols-4 md:grid-cols-2 justify-items-center justify-center gap-6 mt-10 mb-5">
           <ProductCard />
           <ProductCard />
           <ProductCard />

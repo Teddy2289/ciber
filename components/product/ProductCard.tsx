@@ -11,7 +11,7 @@ export default function ProductCard() {
           alt="Product"
           className="h-60 w-70 object-contain rounded-t-xl"
         />
-        <div className="px-4 py-1 w-60">
+        <div className="px-4 py-1 w-55">
           <span className="text-gray-400 mr-3 uppercase text-xs">Brand</span>
           <p className="text-lg font-bold text-black truncate block capitalize">
             Product Name

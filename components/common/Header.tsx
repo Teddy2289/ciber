@@ -5,11 +5,12 @@ import Logo from "./Logo";
 import Navbar from "./Navbar";
 import Action from "./Action";
 import { SearchBar } from "./SearchBar";
+import { MobHeader } from "./MobHeader";
 
 export default function Header() {
   return (
     <>
-      <div className="bg-black w-full p-2 text-center">
+      <div className="bg-black w-full p-2 text-center z-20">
         <motion.div
           className="overflow-hidden whitespace-nowrap"
           style={{ display: "flex", alignItems: "center" }}>
@@ -28,11 +29,15 @@ export default function Header() {
           </motion.p>
         </motion.div>
       </div>
-      <div className="hidden md:flex items-center justify-center mx-auto bg-white rounded-full px-10 pb-[18px] py-[14px] mt-5 shadow-lg w-fit">
+      <div className="hidden lg:flex items-center justify-center mx-auto bg-white rounded-full px-10 pb-[18px] py-[14px] mt-5 shadow-lg w-fit">
         <Logo />
         <Navbar />
         <SearchBar />
         <Action />
+      </div>
+      <div className="flex flex-row items-center w-full justify-between py-4 px-6 z-10 lg:hidden">
+        <Logo />
+        <MobHeader />
       </div>
     </>
   );

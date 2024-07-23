@@ -31,7 +31,9 @@ export const Input = ({
 
   return (
     <div className="flex flex-col gap-3">
-      <h2 className="text-secondary font-bold text-lg uppercase">{title}</h2>
+      <h2 className="text-secondary font-semibold lg:font-bold sm:text-[16px] lg:text-lg uppercase">
+        {title}
+      </h2>
       <div className="flex gap-2 w-full border border-gray-500 rounded-full px-4  py-2">
         {isSelect ? (
           <select

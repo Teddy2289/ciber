@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function BestSellerProduct() {
   return (
-    <Wrapper classname="w-4/5">
+    <div className="mt-14 px-6 md:px-8">
       <TitlteSecrion
         title="Nos produits les plus vendus"
         postTitle="Nos produits"
@@ -20,6 +20,6 @@ export default function BestSellerProduct() {
         <ProductCard />
       </section>
       <Separator classname="h-3 mt-12" />
-    </Wrapper>
+    </div>
   );
 }

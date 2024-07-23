@@ -19,7 +19,7 @@ export default function Brand() {
     { name: "Brand 3", image: "/images/sony.png" },
   ];
   return (
-    <div className="max-w-2xl gl_brands">
+    <div className="max-w-2xl gl_brands mt-14 mb-14">
       <Swiper
         navigation={true}
         modules={[Pagination, A11y, Autoplay]}
@@ -29,6 +29,17 @@ export default function Brand() {
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
+        }}
+        breakpoints={{
+          300: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
         }}
         className="mySwiper w-full">
         {brands.map((brand, index) => (

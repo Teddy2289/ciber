@@ -1,67 +1,45 @@
-import React from "react";
+import Image from "next/image";
+import { Wrapper } from "../wrapper";
 
-export default function Textui() {
+const services = [
+  {
+    title: "FREE AND FAST DELIVERY",
+    description: "Free delivery for all orders over $140",
+    image: "/images/delivery.png",
+  },
+  {
+    title: "24/7 CUSTOMER SERVICE",
+    description: "Friendly 24/7 customer support",
+    image: "/images/Services.png",
+  },
+  {
+    title: "MONEY BACK GUARANTEE",
+    description: "We reurn money within 30 days",
+    image: "/images/guaranty.png",
+  },
+];
+
+export const Textui = () => {
   return (
-    <section className="features-area py-12">
-      <div className="container mx-auto">
-        <div className="row flex flex-wrap -mx-4">
-          <div className="col-lg-3 col-md-6 col-sm-6 px-4 mb-8">
-            <div className="single-feature text-center p-6 shadow-lg">
-              <div className="f-icon mb-4">
-                <img
-                  src="img/features/f-icon1.png"
-                  alt=""
-                  className="mx-auto"
-                />
-              </div>
-              <h6 className="text-lg font-semibold mb-2">Free Delivery</h6>
-              <p>Free Shipping on all order</p>
-            </div>
+    <Wrapper classname="w-full mt-8 lg:mt-14">
+      <div className="flex flex-col gap-8  lg:flex-row justify-between">
+        {services.map((service, index) => (
+          <div key={index} className="flex flex-col items-center">
+            <Image
+              alt={service.title}
+              src={service.image}
+              width={80}
+              height={80}
+            />
+            <h2 className="font-semibold text-xl text-black leading-8 mt-6">
+              {service.title}
+            </h2>
+            <p className="font-normal text-base text-black leading-6 mt-2">
+              {service.description}
+            </p>
           </div>
-
-          <div className="col-lg-3 col-md-6 col-sm-6 px-4 mb-8">
-            <div className="single-feature text-center p-6 shadow-lg">
-              <div className="f-icon mb-4">
-                <img
-                  src="img/features/f-icon2.png"
-                  alt=""
-                  className="mx-auto"
-                />
-              </div>
-              <h6 className="text-lg font-semibold mb-2">Return Policy</h6>
-              <p>Free Shipping on all order</p>
-            </div>
-          </div>
-
-          <div className="col-lg-3 col-md-6 col-sm-6 px-4 mb-8">
-            <div className="single-feature text-center p-6 shadow-lg">
-              <div className="f-icon mb-4">
-                <img
-                  src="img/features/f-icon3.png"
-                  alt=""
-                  className="mx-auto"
-                />
-              </div>
-              <h6 className="text-lg font-semibold mb-2">24/7 Support</h6>
-              <p>Free Shipping on all order</p>
-            </div>
-          </div>
-
-          <div className="col-lg-3 col-md-6 col-sm-6 px-4 mb-8">
-            <div className="single-feature text-center p-6 shadow-lg">
-              <div className="f-icon mb-4">
-                <img
-                  src="img/features/f-icon4.png"
-                  alt=""
-                  className="mx-auto"
-                />
-              </div>
-              <h6 className="text-lg font-semibold mb-2">Secure Payment</h6>
-              <p>Free Shipping on all order</p>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
-    </section>
+    </Wrapper>
   );
-}
+};

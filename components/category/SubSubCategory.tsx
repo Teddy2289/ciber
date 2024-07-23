@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const SubSubCategory = ({ subcategory }: SubSubcategoryProps) => {
   return (
-    <div className="flex flex-row flex-wrap absolute top-[-10px] left-40 bg-white shadow-md p-5 w-[75vw] 2xl:w-[60vw]">
+    <div className="hidden lg:flex flex-row flex-wrap absolute top-[-10px] left-40 bg-white shadow-md p-5 w-[75vw] 2xl:w-[60vw]">
       {subcategory.slice(0, 4).map((cat: Subcategory, index: number) => (
         <div key={index} className="flex flex-col w-1/4">
           <h2 className="font-bold text-lg uppercase text-secondary mb-3">
